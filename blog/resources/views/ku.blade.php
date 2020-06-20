@@ -86,7 +86,6 @@
         <!-- menu -->
         <div class = "home_menu" id="home_menu">
             <div class = "btn_menu" id="btn_menu_1" onclick="turnPage(1)">首页</div>
-            <div class = "btn_menu" id="btn_menu_2" onclick="turnPage(2)">人才库</div>
             <div class = "btn_menu" id="btn_menu_3" onclick="turnPage(3)">论坛</div>
             <div class = "btn_menu" id="btn_menu_4" onclick="turnPage(4)">我的</div>
         </div>

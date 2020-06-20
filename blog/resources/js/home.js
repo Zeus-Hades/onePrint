@@ -8,9 +8,6 @@ function turnPage(num){
         case 1:
         //跳转到首页
             break;
-        case 2:
-        //跳转到人才库
-            break;
         case 3:
         //跳转到论坛
             break;
