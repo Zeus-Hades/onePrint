@@ -56,9 +56,6 @@ function turnPage(num){
             window.location = "..\\resources\\views\\ku.blade.php";
             break;
         case 3:
-        //跳转到论坛
-            break;
-        case 4:
         //跳转到 我的
             break;
         default:
