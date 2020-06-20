@@ -86,8 +86,23 @@
         <!-- menu -->
         <div class = "home_menu" id="home_menu">
             <div class = "btn_menu" id="btn_menu_1" onclick="turnPage(1)">首页</div>
-            <div class = "btn_menu" id="btn_menu_3" onclick="turnPage(3)">论坛</div>
-            <div class = "btn_menu" id="btn_menu_4" onclick="turnPage(4)">我的</div>
+            <div class = "btn_menu" id="btn_menu_2" onclick="turnPage(2)">论坛</div>
+            <div class = "btn_menu" id="btn_menu_3" onclick="turnPage(3)">我的</div>
+        </div>
+        <!--search menu-->
+        <div class = "ku_search" id="ku_search">
+            <div class= "btn_search" id ="btn_search_1">关键字</div>
+            <div class= "btn_search" id ="btn_search_2">工作地区</div>
+            <div class= "btn_search" id ="btn_search_4">搜索键</div>
+
+        </div>
+        
+        <div class = "ku_search" id="ku_search">
+            <div class= "btn_search" id ="btn_search_1">关键字</div>
+            <div class= "btn_search" id ="btn_search_2">工作地区</div>
+            <div class= "btn_search" id ="btn_search_3">工作类型</div>
+            <div class= "btn_search" id ="btn_search_4">搜索键</div>
+
         </div>
 
 

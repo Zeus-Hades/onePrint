@@ -8,10 +8,10 @@ function turnPage(num){
         case 1:
         //跳转到首页
             break;
-        case 3:
+        case 2:
         //跳转到论坛
             break;
-        case 4:
+        case 3:
         //跳转到 我的
             break;
     }
