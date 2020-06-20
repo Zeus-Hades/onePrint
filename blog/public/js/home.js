@@ -23,7 +23,7 @@ function login(){
     switch(username){
         case 'admin':
             if(password = 'admin'){
-                alert("管理员登录成功");
+                alert("666");
             }else{
                 alert("密码错误");
             }
