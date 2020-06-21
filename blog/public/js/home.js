@@ -37,7 +37,7 @@ function login(){
             break;
         case 'company':
             if(password = 'company'){
-                alert("公司账户登录成功");
+                window.location = "/Demo1/blog/public/company";
             }else{
                 alert("密码错误");
             }
@@ -50,13 +50,17 @@ function turnPage(num){
     switch(num){
         case 1:
         //跳转到首页
+            window.location = "/Demo1/blog/public/";
             break;
         case 2:
-        //跳转到人才库
-            window.location = "..\\resources\\views\\ku.blade.php";
+        //跳转到人才库  //resources\\views\\ku.blade.php
+            window.location = "/Demo1/blog/public/ku";
+            //$.get("/Demo1/blog/public/ku");
             break;
         case 3:
         //跳转到 我的
+            window.location = "/Demo1/blog/public/profile";
+            //$.get("/Demo1/blog/public/profile");
             break;
         default:
             break;

@@ -16,3 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('ku', function () {
+    return view('ku');
+});
+Route::get('profile', function () {
+    return view('profile');
+});
+Route::get('company', function () {
+    return view('company');
+});
+
+$api = app(\Dingo\Api\Routing\Router::class);
+
+$api->version('v1', function ($api) {
+
+    $api->get('ku', function () {
+        return view('ku');
+    });
+
+});
