@@ -22,6 +22,7 @@ function clickHeader(headerName) {
     reset();
     switch (headerName) {
         //product
+        case 0:
         case 1:
             let product = document.getElementById("product_id");
             product.style.backgroundColor = "rgb(103, 151, 165)";
