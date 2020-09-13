@@ -10,7 +10,7 @@
         <!-- header -->
         <div class="header" id="header_id">
             <div class="companyLogo" id="companyLogo_id"></div>
-            <div class="home" id="home_id"><p>home</p></div>
+            <div class="home" id="home_id" onclick="clickHeader(0)><p>home</p></div>
             <div class="product" id="product_id" onclick="clickHeader(1)">
                 <p>product</p>
                 <ul id="product_ul">
