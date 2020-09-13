@@ -1,68 +1,49 @@
 //login in
-function stopPropagation(e) {
-    var ev = e || window.event;
-    if (ev.stopPropagation) {
-        ev.stopPropagation();
-    }
-}
+// function stopPropagation(e) {
+//     var ev = e || window.event;
+//     if (ev.stopPropagation) {
+//         ev.stopPropagation();
+//     }
+// }
 
-function login_dialog(){
-    $("#background").show();
+// function login_dialog(){
+//     $("#background").show();
     
-    $("#background").click(function (e) {
-        $("#background").hide();
-        stopPropagation(e);
-    });
-    $("#login_dialog").click(function (e) {
-        stopPropagation(e);
-    });
-}
-function login(){
-    let username = $("#login_username").val();
-    let password = $("#login_password").val();
-    switch(username){
-        case 'admin':
-            if(password = 'admin'){
-                alert("666");
-            }else{
-                alert("密码错误");
-            }
-            break;
-        case 'user':
-            if(password = 'user'){
-                alert("用户登录成功");
-            }else{
-                alert("密码错误");
-            }
-            break;
-        case 'company':
-            if(password = 'company'){
-                window.location = "/Demo1/blog/public/company";
-            }else{
-                alert("密码错误");
-            }
-            break;
-        default:
-            alert("用户名错误");
-    }
-}
-function turnPage(num){
-    switch(num){
+//     $("#background").click(function (e) {
+//         $("#background").hide();
+//         stopPropagation(e);
+//     });
+//     $("#login_dialog").click(function (e) {
+//         stopPropagation(e);
+//     });
+// }
+
+function clickHeader(headerName) {
+    reset();
+    switch (headerName) {
+        //product
         case 1:
-        //跳转到首页
-            window.location = "/Demo1/blog/public/";
+            let product = document.getElementById("product_id");
+            product.style.backgroundColor = "rgb(103, 151, 165)";
+            product.style.color = "white";
+            product.style.display = "block";
             break;
         case 2:
-        //跳转到人才库  //resources\\views\\ku.blade.php
-            window.location = "/Demo1/blog/public/ku";
-            //$.get("/Demo1/blog/public/ku");
+            let design = document.getElementById("design_id");
+            design.style.backgroundColor = "rgb(103, 151, 165)";
+            design.style.color = "white";
+            design.style.display = "block";
             break;
-        case 3:
-        //跳转到 我的
-            window.location = "/Demo1/blog/public/profile";
-            //$.get("/Demo1/blog/public/profile");
+        default :
             break;
-        default:
-            break;
-    }
+    } 
+    
 }
+function reset() {
+    document.getElementById("product_id").style.backgroundColor = "white";
+    document.getElementById("design_id").style.backgroundColor = "white";
+    document.getElementById("product_id").style.color = "black";
+    document.getElementById("design_id").style.color = "black";
+}
+
+

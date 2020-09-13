@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="styleSheet" href="{{URL::asset('/css/home.css') }}" type="text/css"></link>
+    <link rel="styleSheet" href="{{URL::asset('/css/home.css') }}" type="text/css">
     <script type="text/javascript" src="{{URL::asset('/js/home.js') }}"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="{{URL::asset('/js/jquery-3.5.1.js') }}"></script>
+    <script type="text/javascript" src="{{URL::asset('/js/jquery-3.5.1.min.js') }}"></script>
     </head>
     <body>
-        <!-- top -->
-        <div class="top" id="home_top">
-            <div class="btn_top"><p>公司logo</p></div>
-            <div id="btn_top_login" onclick="login_dialog()"><p>登录/注册</p></div>
+        <!-- header -->
+        <div class="header" id="header_id">
+            <div class="companyLogo" id="companyLogo_id"></div>
+            <div class="home" id="home_id"><p>home</p></div>
+            <div class="product" id="product_id" onclick="clickHeader(1)">
+                <p>product</p>
+                <ul id="product_ul">
+                    <li><p>product_1</p></li>
+                    <li><p>product_2</p></li>
+                    <li><p>product_3</p></li>
+                    <li><p>product_4</p></li>
+                </ul>
+            </div>
+            <div class="design" id="design_id" onclick="clickHeader(2)"><p>design</p></div>
+            <div class="gallary" id="gallary_id"><p>gallary</p></div>
+            <div class="support" id="support_id"><p>support</p></div>
+            <div class="aboutUs" id="aboutUs_id"><p>about us</p></div>
+            <div class="contact" id="contact_id"><p>contact us</p></div>
+            <div class="cart" id="cart_id"><p>cart</p></div>
+            <div class="login" id="login_id"><p>login</p></div>
+            <div class="register" id="register_id"><p>register</p></div>
         </div>
-        <!-- menu -->
-        <div class = "home_menu" id="home_menu">
-            <div class = "btn_menu" id="btn_menu_1" onclick="turnPage(1)">首页</div>
-            <div class = "btn_menu" id="btn_menu_2" onclick="turnPage(2)">人才库</div>
-            <div class = "btn_menu" id="btn_menu_3" onclick="turnPage(3)">我的</div>
+        <!-- diaplayBox -->
+        <div class = "diaplayBox" id="diaplayBox_id">
+            <img id="home_img_showPhoto1">
+            <img id="home_img_showPhoto2">
+            <img id="home_img_showPhoto3">
         </div>
-        <!--search menu-->
-        <div class = "home_search_menu">
-            <div class= "btn_search" id ="btn_search_1">关键字</div>
-            <div class= "btn_search" id ="btn_search_2">工作地区</div>
-            <div class= "btn_search" id ="btn_search_3">工作类型</div>
-            <div class= "btn_search" id ="btn_search_4">搜索键</div>
+        <!-- home -->
+        <div class = "home_div" id="home_div_id" style="display:">
+
         </div>
-        <!-- main space -->
-        <div class="home_main">热门工作</div>
-        <!-- bottom -->
-        <div class="buttom">联系我们</div>
-        <!--login dialog-->
-        <div id="background" style="display:none">
-            <div id="login_dialog">
-                <div class="dialog_username">
-                    <p>username:</p><input type="text" id="login_username">
-                </div>
-                <div class="dialog_password">
-                    <p>password:</p><input type="text" id="login_password">
-                </div>
-                <div id="login_in" onclick="login()"><p>登录</p></div>
+
+        <!-- product -->
+        <div class = "product_div" id="product_div_id" style="display:none">
+
+        </div>
+
+        <!-- design -->
+        <div class = "design_div" id="design_div_id" style="display:none">
+
+        </div>
+
+        <!-- gallary -->
+        <div class = "gallary_div" id="gallary_div_id" style="display:none">
+
+        </div>
+
+        <!-- support -->
+        <div class = "support_div" id="support_div_id" style="display:none">
+
+        </div>
+
+        <!-- aboutUs -->
+        <div class = "aboutUs_div" id="aboutUs_div_id" style="display:none">
+
+        </div>
+
+        <!-- contact -->
+        <div class = "contact_div" id="contact_div_id" style="display:none">
+
+        </div>
+
+        <!-- cart -->
+        <div class = "cart_div" id="cart_div_id" style="display:none">
+
+        </div>
+
+        <!-- login -->
+        <div class = "login_div" id="login_div_id" style="display:none">
+
+        </div>
+
+        <!-- register -->
+        <div class = "register_div" id="register_div_id" style="display:none">
+
+        </div>
+        
+        <!-- footer -->
+        <div class = "footer" id="footer_id">
+            <div class = "footer_div_message" id="footer_div_message_id">
+                <div class = "footer_div_phoneNumber"></div>
+                <div class = "footer_div_placeInfo"></div>
             </div>
         </div>
+
     </body>
 </html>

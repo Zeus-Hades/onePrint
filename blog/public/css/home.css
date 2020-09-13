@@ -1,177 +1,86 @@
-.top{
+.header {
     position: absolute;
-    top: 0;
-    width:100%;
-    height:50px;
-    background-color: aqua;
-    
+    width: 70%;
+    height: 10%;
+    top: 5%;
+    left:15%;
+
+    display: grid;
+    grid-template-columns:50% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
 }
-.btn_top{
-    position: relative;
-    top: 0;
-    left:50px;
-    height:50px;
-    width:100px;
-    font-size: larger;
-    color: black;
+.companyLogo {
+
+}
+.home,
+.product,
+.design,
+.gallary,
+.support,
+.aboutUs,
+.contact {
+    display: grid;
     text-align: center;
-    line-height: 15px;
+    font-size: small;
+    color:black;
 }
-#btn_top_login{
-    position: absolute;
-    top: 0;
-    right:100px;
-    height:50px;
-    width:80px;
-    font-size: large;
+.home>p,
+.product>p,
+.design>p,
+.gallary>p,
+.support>p,
+.aboutUs>p,
+.contact>p {
+    height: 50%;
+}
+.home:hover,
+.product:hover,
+.design:hover,
+.gallary:hover,
+.support:hover,
+.aboutUs:hover,
+.contact:hover{
+    color:white;
+    background-color: rgb(132, 199, 219);
+}
+.product>ul {
+    display: none;
+    list-style:none;
     color: black;
-    line-height: 15px;
-    border-radius:5px;
-}
-#btn_top_login:hover{
-    background-color: black;
-    color: white;
-    border-radius:5px;
-}
-
-.home_menu{
     position: absolute;
-    top: 150px;
-    width: 66%;
-    height: 100px;
-    left: 17%;
-    background-color: aqua;
+    margin:0; 
+    padding:0;
 }
-.btn_menu{
+.product>ul>li {
+    width:20px;
+    height:10px;
+    text-align: left;
+}
+
+.home:hover>ul,
+.product:hover>ul,
+.design:hover>ul,
+.gallary:hover>ul,
+.support:hover>ul,
+.aboutUs:hover>ul,
+.contact:hover>ul{
+    display: block;
+}
+
+.cart,
+.login,
+.register {
+    display: grid;
+    text-align: center;
+    font-size: small    ;
+    color:black;
+    background-color: rgb(200, 200, 200);
+}
+
+
+.footer {
     position: absolute;
-    background-color: black;
-    color: white;
-    width: 200px;
-    height: 50px;
-    top: 25px;
-    margin: auto 0px;
-    font-size: large;
-}
-#btn_menu_1{
-    left:40px
-}
-#btn_menu_2{
-    left:280px
-}
-#btn_menu_3{
-    left:520px
-}
-#btn_menu_4{
-    left:760px
-}
-
-
-.home_search_menu{
-    position: relative;
-    background-color: darkcyan;
-    top: 300px;
-    height: 100px;
-    width: 70%;
-    left: 15%;
-}
-.btn_search{
-    position: absolute;
-    background-color: blanchedalmond;
-    top: 20px;
-    height: 60px;
-    width: 180px;
-}
-#btn_search_1{
-    left:100px;
-}
-#btn_search_2{
-    left:320px;
-}
-#btn_search_3{
-    left:540px;
-}
-#btn_search_4{
-    left:760px;
-}
-
-
-.home_main{
-    position: relative;
-    background-color: darkcyan;
-    top: 400px;
-    height: 400px;
-    width: 70%;
-    margin: auto 0px;
-    left: 15%;
-}
-.buttom{
-    position: relative;
-    background-color: darkcyan;
-    height: 100px;
     width: 100%;
-    margin: auto 0px;
-    top: 500px;
-}
-
-#login_dialog{
-    margin: auto;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    height:300px;
-    width:500px;
-    background-color: beige;
-}
-
-#background{
-    margin: auto;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    width:100%;
-    height:100%;
-}
-.dialog_username{
-    position: absolute;
-    top: 70px;
-    left: 85px;
-}
-.dialog_password{
-    position: absolute;
-    top: 100px;
-    left: 85px;
-}
-#login_username{
-    position: absolute;
-    width: 200px;
-    height: 20px;
-    background-color: white;
-    border-radius: 5px;
-    top: 15px;
-    left: 100px;
-}
-#login_password{
-    position: absolute;
-    width: 200px;
-    height: 20px;
-    background-color: white;
-    border-radius: 5px;
-    top: 15px;
-    left: 100px;
-}
-#login_in{
-    background-color: black;
-    color: white;
-    position: absolute;
-    width: 60px;
-    height: 30px;
-    border-radius: 5px;
-    top: 200px;
-    left: 220px;
-    text-align: center;
-    line-height: 0;
+    height: 15%;
+    background-color: rgb(48, 48, 48);
+    top:85%;
 }
