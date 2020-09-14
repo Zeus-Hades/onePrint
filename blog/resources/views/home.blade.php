@@ -6,7 +6,7 @@
     <script type="text/javascript" src="{{URL::asset('/js/jquery-3.5.1.js') }}"></script>
     <script type="text/javascript" src="{{URL::asset('/js/jquery-3.5.1.min.js') }}"></script>
     </head>
-    <body>
+    <body onload="initPage()">
         <!-- header -->
         <div class="header" id="header_id">
             <div class="companyLogo" id="companyLogo_id"></div>
@@ -24,16 +24,26 @@
             </div>
             <div class="design" id="design_id" onclick="clickHeader(2)">
                 <p>design</p>
+                <ul id="design_ul">
+                    <li><p>booklets</p></li>
+                    <li><p>product_2</p></li>
+                    <li><p>product_3</p></li>
+                </ul>
             </div>
-            <div class="gallary" id="gallary_id" onclick="clickHeader(3)">
+            <div class="gallary" id="gallary_id" onclick="clickHeader(3)">  
                 <p>gallary</p>
+                <ul id="gallary_ul">
+                    <li><p>booklets</p></li>
+                    <li><p>product_2</p></li>
+                    <li><p>product_3</p></li>
+                </ul>
             </div>
             <div class="support" id="support_id" onclick="clickHeader(4)"><p>support</p></div>
             <div class="aboutUs" id="aboutUs_id" onclick="clickHeader(5)"><p>about us</p></div>
             <div class="contact" id="contact_id" onclick="clickHeader(6)"><p>contact us</p></div>
-            <div class="cart" id="cart_id"><p>cart</p></div>
-            <div class="login" id="login_id"><p>login</p></div>
-            <div class="register" id="register_id"><p>register</p></div>
+            <div class="cart" id="cart_id" onclick="clickHeader(7)"><p>cart</p></div>
+            <div class="login" id="login_id" onclick="clickHeader(8)"><p>login</p></div>
+            <div class="register" id="register_id" onclick="clickHeader(9)"><p>register</p></div>
         </div>
         <!-- diaplayBox -->
         <div class = "diaplayBox" id="diaplayBox_id">
@@ -41,8 +51,11 @@
             <img id="home_img_showPhoto2">
             <img id="home_img_showPhoto3">
         </div>
+
+
+
         <!-- home -->
-        <div class = "home_div" id="home_div_id" style="display:">
+        <div class = "home_div" id="home_div_id" style="display:block">
             <div class="home_width_holder" id="home_width_holder_id">
 			    <div class="booklets_holder home_menu">
 			        <a href="" title="Online Booklet Printing Services">
@@ -87,7 +100,6 @@
                             <h4>Need Help?</h4>
                             <p>Our friendly team is ready to offer you industry help or advice.</p>
                             </a><a class="blue_link" href="">read more+</a>
-                        
                     </div>
                 </div>
                 <div class="clear"></div>
