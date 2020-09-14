@@ -10,21 +10,23 @@
         <!-- header -->
         <div class="header" id="header_id">
             <div class="companyLogo" id="companyLogo_id"></div>
-            <div class="home" id="home_id" onclick="clickHeader(0)><p>home</p></div>
+            <div class="home" id="home_id" onclick="clickHeader(0)">
+                <p>home</p>
+            </div>
             <div class="product" id="product_id" onclick="clickHeader(1)">
                 <p>product</p>
                 <ul id="product_ul">
-                    <li><p>product_1</p></li>
+                    <li><p>booklets</p></li>
                     <li><p>product_2</p></li>
                     <li><p>product_3</p></li>
                     <li><p>product_4</p></li>
                 </ul>
             </div>
             <div class="design" id="design_id" onclick="clickHeader(2)"><p>design</p></div>
-            <div class="gallary" id="gallary_id"><p>gallary</p></div>
-            <div class="support" id="support_id"><p>support</p></div>
-            <div class="aboutUs" id="aboutUs_id"><p>about us</p></div>
-            <div class="contact" id="contact_id"><p>contact us</p></div>
+            <div class="gallary" id="gallary_id" onclick="clickHeader(3)"><p>gallary</p></div>
+            <div class="support" id="support_id" onclick="clickHeader(4)"><p>support</p></div>
+            <div class="aboutUs" id="aboutUs_id" onclick="clickHeader(5)"><p>about us</p></div>
+            <div class="contact" id="contact_id" onclick="clickHeader(6)"><p>contact us</p></div>
             <div class="cart" id="cart_id"><p>cart</p></div>
             <div class="login" id="login_id"><p>login</p></div>
             <div class="register" id="register_id"><p>register</p></div>
