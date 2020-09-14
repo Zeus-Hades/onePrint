@@ -46,13 +46,80 @@
             <div class="home_width_holder" id="home_width_holder_id">
 			    <div class="booklets_holder home_menu">
 			        <a href="" title="Online Booklet Printing Services">
-				    <div class="home_panel_img booklets_img">
-                    </div>
+                    <!-- 到时候改-->
+				    <div class="home_panel_img booklets_img"></div>
 				        Booklets
 			        </a>
-			    </div>
+                </div>
+                <div class="brochures_holder home_menu">
+                    <a href="" title="Online Brochure Printing Services">
+                    <div class="home_panel_img brochures_img"></div>
+                        Brochures
+                    </a>
+                </div>
 			<div class="clear"></div>
-		    </div>
+            </div>
+            
+            <div class="home_content_holder">
+                <div class="home_content_left">
+                    <h1 class="hp_title">we deliver quality printing <br style="">at the lowest possible price.</h1>
+                    <p>Find the most cost effective solution for your business with our instant online pricing.</p>
+                    <p>&nbsp;</p>
+                    <p>Supply your print ready artwork and upload your file using our online ordering system. Alternatively, call or email our friendly staff who can assist you with your order.</p>
+                        <span class="latest-articles">Latest Articles</span>
+                    <div class="blog_article">
+                        <div class="blog_post_container">
+                            <div class="blog_post_title"><a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/blog/effective-poster-design-in-1-2-3/">Effective Poster Design in 1, 2, 3!</a></div>
+                            <div class="blog_post_content"><p>Posters can be an incredibly powerful marketing tool for any business, campaign or organisation that wants to be heard. They’re especially impact...</p></div>
+                            <div class="blog_post_view"><a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/blog/effective-poster-design-in-1-2-3/">view post</a></div>
+                        </div>
+                        <div class="blog_post_container">
+                            <div class="blog_post_title"><a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/blog/understanding-rgb-101/">Understanding RGB 101</a></div>
+                            <div class="blog_post_content"><p>For graphic designers, there are many different terms used to measure and describe colour. RGB is one of the most common and most important colour ...</p></div>
+                            <div class="blog_post_view"><a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/blog/understanding-rgb-101/">view post</a></div>
+                        </div>
+                        <div class="blog_post_container">
+                            <div class="blog_post_title"><a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/blog/the-ultimate-print-ready-checklist/">The Ultimate Print-Ready Checklist</a></div>
+                            <div class="blog_post_content"><p>As most of our work heads towards the digital realm, chances are, most of us aren’t thinking about the printed product. But this is important, as...</p></div>
+                            <div class="blog_post_view"><a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/blog/the-ultimate-print-ready-checklist/">view post</a></div>
+                        </div>
+                    <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="home_content_right">
+                    
+                    <div class="home_subtitle">an online store with a difference...</div>
+                    <div class="home_panel1">
+                        <a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/order.php">
+                            <div class="home_panel1_img">
+                            </div>
+                            <h4>Easy Ordering</h4>
+                            <p>Shopping cart, email, FTP or Dropbox services available.</p>
+                            </a><a class="blue_link" href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/order.php">read more+</a>
+                        
+                    </div>
+                    <div class="home_panel2">
+                        <a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/delivery.php">
+                            <div class="home_panel2_img">
+                            </div>
+                            <h4>Free Delivery</h4>
+                            <p>Free delivery Australia wide for all products.</p>
+                            </a><a class="blue_link" href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/delivery.php">read more+</a>
+                        
+                    </div>
+                    <div class="home_panel3">
+                        <a href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/faq.php">
+                            <div class="home_panel3_img">
+                            </div>
+                            <h4>Need Help?</h4>
+                            <p>Our friendly team is ready to offer you industry help or advice.</p>
+                            </a><a class="blue_link" href="http://web.archive.org/web/20180317052128/http://www.1print.net.au/faq.php">read more+</a>
+                        
+                    </div>
+                </div>
+                <div class="clear"></div>
+                </div>
+            </div>
         </div>
 
         <!-- product -->

@@ -8,8 +8,22 @@
     display: grid;
     grid-template-columns:50% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
 }
+.home_content_left{
+    position: relative;
+    width: 45%;
+    left: 1%;
+    float:left;
+}
+.home_content_right{
+    position: relative;
+    width: 45%;
+    left: 5%;
+    float: left;
+}
+.home_content_holder,
 .home_width_holder{
     position: relative;
+    margin:3%;
 
 
 
