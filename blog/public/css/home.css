@@ -8,6 +8,18 @@
     display: grid;
     grid-template-columns:50% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
 }
+.home_width_holder{
+    position: relative;
+
+
+
+}
+.home_div{
+    position: absolute;
+    width: 70%;
+    top: 15%;
+    left:15%;
+}
 .companyLogo {
 
 }

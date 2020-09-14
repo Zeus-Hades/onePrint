@@ -22,8 +22,12 @@
                     <li><p>product_4</p></li>
                 </ul>
             </div>
-            <div class="design" id="design_id" onclick="clickHeader(2)"><p>design</p></div>
-            <div class="gallary" id="gallary_id" onclick="clickHeader(3)"><p>gallary</p></div>
+            <div class="design" id="design_id" onclick="clickHeader(2)">
+                <p>design</p>
+            </div>
+            <div class="gallary" id="gallary_id" onclick="clickHeader(3)">
+                <p>gallary</p>
+            </div>
             <div class="support" id="support_id" onclick="clickHeader(4)"><p>support</p></div>
             <div class="aboutUs" id="aboutUs_id" onclick="clickHeader(5)"><p>about us</p></div>
             <div class="contact" id="contact_id" onclick="clickHeader(6)"><p>contact us</p></div>
@@ -39,7 +43,16 @@
         </div>
         <!-- home -->
         <div class = "home_div" id="home_div_id" style="display:">
-
+            <div class="home_width_holder" id="home_width_holder_id">
+			    <div class="booklets_holder home_menu">
+			        <a href="" title="Online Booklet Printing Services">
+				    <div class="home_panel_img booklets_img">
+                    </div>
+				        Booklets
+			        </a>
+			    </div>
+			<div class="clear"></div>
+		    </div>
         </div>
 
         <!-- product -->
