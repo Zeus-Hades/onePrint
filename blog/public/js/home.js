@@ -1,8 +1,35 @@
+window.onload=function(){
+    var oDiv  =  document.getElementById('div1');
+    var oUl = document.getElementsByTagName('ul')[0];
+    var Li = oUl.getElementsByTagName('li');
+    oUl.innerHTML = oUl.innerHTML+oUl.innerHTML;
+    oUl.style.width = Li[0].offsetWidth*Li.length+'px';
+    var speed = 2
+    function move(){
+        if(oUl.offsetLeft<-oUl.offsetWidth/speed){
+            oUl.style.left = '0'
+        }
+        if(oUl.offsetLeft>0){
+            oUl.style.left = -oUl.offsetWidth/speed+'px';
+        }
+        //oUl.style.left = oUl.offsetLeft-2+'px';//左
+        oUl.style.left = oUl.offsetLeft+speed+'px';//右
+    }    
+    var timer = setInterval(move,30)
+    oDiv.onmouseover=function(){
+        clearInterval(timer);
+    }	
+    oDiv.onmouseout=function(){
+         timer = setInterval(move,30)
+    }   
+}
+
 function initPage() {
 
     footerPosition();
     $(window).resize(footerPosition);
 
+    //二级菜单
     $("#product_id").hover(function() {  
             $("#product_ul").show(200);  
         } ,
@@ -26,6 +53,8 @@ function initPage() {
             $("#gallary_ul").hide(200); 
         }
     ); 
+
+    window.onload;
 }
 
 function clickHeader(headerName) {
@@ -107,6 +136,8 @@ function reset() {
     document.getElementById("support_id").style.backgroundColor = "white";
     document.getElementById("aboutUs_id").style.backgroundColor = "white";
     document.getElementById("contact_id").style.backgroundColor = "white";
+    document.getElementById("login_id").style.backgroundColor = "white";
+    document.getElementById("register_id").style.backgroundColor = "white";
     document.getElementById("home_id").style.color = "black";
     document.getElementById("product_id").style.color = "black";
     document.getElementById("design_id").style.color = "black";
@@ -114,6 +145,8 @@ function reset() {
     document.getElementById("support_id").style.color = "black";
     document.getElementById("aboutUs_id").style.color = "black";
     document.getElementById("contact_id").style.color = "black";
+    document.getElementById("login_id").style.color = "black";
+    document.getElementById("register_id").style.color = "black";
     document.getElementById("home_div_id").style.display = "none";
     document.getElementById("product_div_id").style.display = "none";
     document.getElementById("design_div_id").style.display = "none";
@@ -121,6 +154,8 @@ function reset() {
     document.getElementById("support_div_id").style.display = "none";
     document.getElementById("aboutUs_div_id").style.display = "none";
     document.getElementById("contact_div_id").style.display = "none";
+    document.getElementById("login_div_id").style.display = "none";
+    document.getElementById("register_div_id").style.display = "none";
 }
 
 
@@ -132,10 +167,8 @@ function footerPosition(){
             //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
             $("footer").addClass("fixed-bottom");
         }
-    }
-
-
-
+}
 
 
  
+
