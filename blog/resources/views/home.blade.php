@@ -4,6 +4,7 @@
     <link rel="styleSheet" href="{{URL::asset('/css/home.css') }}" type="text/css">
     <link rel="styleSheet" href="{{URL::asset('/css/design.css') }}" type="text/css">
     <link rel="styleSheet" href="{{URL::asset('/css/aboutus.css') }}" type="text/css">
+    <link rel="styleSheet" href="{{URL::asset('/css/register.css') }}" type="text/css">
     <link rel="styleSheet" href="{{URL::asset('/css/login.css') }}" type="text/css">
     <link rel="styleSheet" href="{{URL::asset('/css/contact.css') }}" type="text/css">
     <script type="text/javascript" src="{{URL::asset('/js/home.js') }}"></script>
@@ -392,12 +393,13 @@
                     </div>
                     <!-- Feedback Form -->
                     <form action="#" id="form" method="post" name="form">
-                    <input name="vname" placeholder="Your Name" type="text" value="">
-                    <input name="vemail" placeholder="Your Email" type="text" value="">
-                    <input name="sub" placeholder="Subject" type="text" value="">
-                    <label>Your Suggestion/Feedback</label>
-                    <textarea name="msg" placeholder="Type your text here..."></textarea>
-                    <input id="send" name="submit" type="submit" value="Send Feedback">
+                    <input name="contact_div_vname" placeholder="Your Name" type="text" value="">
+                    <input name="contact_div_vemail" placeholder="Your Email" type="text" value="">
+                    <input name="contact_div_sub" placeholder="Subject" type="text" value="">
+                    <p>Your Suggestion/Feedback</p>
+                    <textarea name="contact_div_msg" placeholder="Type your text here..."></textarea>
+                    <p></p>
+                    <input id="contact_div_send" name="submit" type="submit" value="Send Feedback">
                     </form>
                     <h3><?php include "../resources/views/secure_email_code.php"?></h3>
                     </div>
@@ -434,7 +436,48 @@
 
             <!-- register -->
             <div class = "register_div" id="register_div_id" style="display:none">
+                <div class="register_div_user">
+                    <header class="register_div_user_header">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt="" />
+                        <h1 class="register_div_user_title">Register form</h1>
+                    </header>
+                    
+                    <form class="register_div_form">
+                        <div class="register_div_form_group">
+                            <input type="text" placeholder="Username" class="register_div_form_input" />
+                        </div>
+                        
+                        <div class="register_div_form_group">
+                            <input type="email" placeholder="Email" class="register_div_form_input" />
+                        </div>
+                        
+                        <div class="register_div_form_group">
+                            <input type="password" placeholder="Password" class="register_div_form_input" />
+                        </div>
 
+                        <div class="register_div_form_group">
+                            <input type="tel" placeholder="Phone number" class="register_div_form_input" />
+                        </div>
+
+                        <div class="register_div_form_group">
+                            <input type="text" placeholder="Address" class="register_div_form_input" />
+                        </div>
+
+                        <div class="register_div_form_group">
+                            <input type="text" placeholder="Suburb" class="register_div_form_input" />
+                        </div>
+
+                        <div class="register_div_form_group">
+                            <input type="text" placeholder="State" class="register_div_form_input" />
+                        </div>
+
+                        <div class="register_div_form_group">
+                            <input type="text" placeholder="Postcode" class="register_div_form_input" />
+                        </div>
+                        
+                        <button class="register_div_btn" type="button">Register</button>
+                    </form>
+                </div>
             </div>
             
             <!-- footer -->

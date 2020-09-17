@@ -11,7 +11,9 @@ h3,p,label {
 h2 {
     font-family:'Raleway',sans-serif
 }
-input {
+.contact_div_vname,
+.contact_div_vemail,
+.contact_div_sub {
     width:100%;
     margin-bottom:20px;
     padding:5px;
@@ -20,15 +22,15 @@ input {
     border-radius:3px;
     border:none
 }
-textarea {
+textarea.contact_div_msg {
     width:100%;
-    height:80px;
+    height:229px;
     margin-top:10px;
     padding:5px;
     box-shadow:1px 1px 12px gray;
     border-radius:3px
 }
-#send {
+.contact_div_send {
     width:103%;
     height:45px;
     margin-top:40px;
