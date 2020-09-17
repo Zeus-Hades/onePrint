@@ -1,5 +1,5 @@
 window.onload=function(){
-    var oDiv  =  document.getElementById('div1');
+    var oDiv  =  document.getElementById('displayBox');
     var oUl = document.getElementsByTagName('ul')[0];
     var Li = oUl.getElementsByTagName('li');
     oUl.innerHTML = oUl.innerHTML+oUl.innerHTML;
@@ -54,7 +54,7 @@ function initPage() {
         }
     ); 
 
-    window.onload;
+
 }
 
 function clickHeader(headerName) {

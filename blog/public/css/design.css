@@ -1,20 +1,26 @@
 .text_holder{
-    position: absolute;
-    width: 100%;
+    /* position: absolute; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 .main_container{
-    position: relative;
-    margin:3%;
+    /* position: relative;
+    margin:3%; */
+    margin-left: auto;
+    margin-right: auto;
 }
-.container_left{
-    position: relative;
-    width: 45%;
-    left: 1%;
+.design_div_leftContainer{
+    width: 50%;
+    min-height: 400px;
     float:left;
+    margin-left: auto;
+    margin-right: auto;
 }
-.container_right{
-    position: relative;
-    width: 49%;
-    left: 5%;
+.design_div_rightContainer{
+    width: 50%;
+    min-height: 400px;
     float: left;
+    margin-left: auto;
+    margin-right: auto;
 }
