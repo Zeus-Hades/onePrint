@@ -7,9 +7,12 @@
     <link rel="styleSheet" href="{{URL::asset('/css/register.css') }}" type="text/css">
     <link rel="styleSheet" href="{{URL::asset('/css/login.css') }}" type="text/css">
     <link rel="styleSheet" href="{{URL::asset('/css/contact.css') }}" type="text/css">
+    <link rel="styleSheet" href="{{URL::asset('/css/gallary.css') }}" type="text/css">
     <script type="text/javascript" src="{{URL::asset('/js/home.js') }}"></script>
     <script type="text/javascript" src="{{URL::asset('/js/jquery-3.5.1.js') }}"></script>
     <script type="text/javascript" src="{{URL::asset('/js/jquery-3.5.1.min.js') }}"></script>
+    <script src="https://static.pdflibr.com/SuperSlide/2.1.3/jquery.SuperSlide.2.1.3.js"></script>
+    </script>
     </head>
     <body onload="initPage()">
     <!-- <div id="container"> -->
@@ -55,11 +58,20 @@
             
             <!-- diaplayBox -->
             <div class = "displayBox" id="displayBox_id" onload="change()">
-                <ul>
-                    <img src="{{URL::asset('/image/1.jpg') }}" max-width="80%" max-height="400px">
-                    <img src="{{URL::asset('/image/2.jpg') }}" max-width="80%" max-height="400px">
-                    <img src="{{URL::asset('/image/3.jpg') }}" max-width="80%" max-height="400px">
-                </ul>
+                <div class="displayBox_hd">
+                    <ul>
+                       <li></li>
+                       <li></li>
+                       <li></li>
+                    </ul>
+                </div>
+                <div class="displayBox_bd">
+                    <ul>
+                        <img src="{{URL::asset('/image/1.jpg') }}" max-width="80%" max-height="400px">
+                        <img src="{{URL::asset('/image/2.jpg') }}" max-width="80%" max-height="400px">
+                        <img src="{{URL::asset('/image/3.jpg') }}" max-width="80%" max-height="400px">
+                    </ul>
+                </div>
             </div>
 
 
@@ -154,6 +166,94 @@
             <!-- gallary -->
             <div class = "gallary_div" id="gallary_div_id" style="display:none">
                 <div class="text_holder">
+                <div class="gallary_div_options">
+                    <div class="gallary_div_option active" style="--optionBackground:url(URL::asset('/image/3.jpg'));">
+                        <div class="gallary_div_shadow"></div>
+                        <div class="gallary_div_label">
+                            <div class="gallary_div_icon">
+                                <i class="gallary_div_fas fa-walking"></i>
+                            </div>
+                            <div class="gallary_div_info">
+                                <div class="gallary_div_main">Blonkisoaz</div>
+                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary_div_option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                        <div class="gallary_div_shadow"></div>
+                        <div class="gallary_div_label">
+                            <div class="gallary_div_icon">
+                                <i class="gallary_div_fas fa-snowflake"></i>
+                            </div>
+                            <div class="gallary_div_info">
+                                <div class="gallary_div_main">Oretemauw</div>
+                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary_div_option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                        <div class="gallary_div_shadow"></div>
+                        <div class="gallary_div_label">
+                            <div class="gallary_div_icon">
+                                <i class="gallary_div_fas fa-snowflake"></i>
+                            </div>
+                            <div class="gallary_div_info">
+                                <div class="gallary_div_main">Oretemauw</div>
+                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary_div_option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                        <div class="gallary_div_shadow"></div>
+                        <div class="gallary_div_label">
+                            <div class="gallary_div_icon">
+                                <i class="gallary_div_fas fa-snowflake"></i>
+                            </div>
+                            <div class="gallary_div_info">
+                                <div class="gallary_div_main">Oretemauw</div>
+                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary_div_option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                        <div class="gallary_div_shadow"></div>
+                        <div class="gallary_div_label">
+                            <div class="gallary_div_icon">
+                                <i class="gallary_div_fas fa-snowflake"></i>
+                            </div>
+                            <div class="gallary_div_info">
+                                <div class="gallary_div_main">Oretemauw</div>
+                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallary_div_option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+                        <div class="gallary_div_shadow"></div>
+                        <div class="gallary_div_label">
+                            <div class="gallary_div_icon">
+                                <i class="gallary_div_fas fa-tint"></i>
+                            </div>
+                            <div class="gallary_div_info">
+                                <div class="gallary_div_main">Idiefe</div>
+                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="gallary_div_option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+                        <div class="gallary_div_shadow"></div>
+                        <div class="gallary_div_label">
+                            <div class="gallary_div_icon">
+                                <i class="gallary_div_fas fa-sun"></i>
+                            </div>
+                            <div class="gallary_div_info">
+                                <div class="gallary_div_main">Inatethi</div>
+                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 </div>
             </div>
 
@@ -408,10 +508,10 @@
 
                 <div class="clear"></div>
 
-            <!-- Google Map -->
-            <!-- <div style="width: 100%; height: 378px; margin: 53px 20px 0 20px ">
-                <iframe style="width:98.5%;height:100%;" src="http://web.archive.org/web/20180903154238if_/https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.988497474738!2d145.07961095161718!3d-37.97739775109905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66c4e24a3d2d3%3A0xf0e83e3e12eac225!2s13+Shearson+Cres%2C+Mentone+VIC+3194!5e0!3m2!1sen!2sau!4v1457482338047" width="600" height="450" frameborder="0" allowfullscreen="" __idm_frm__="383"></iframe>
-            </div> -->
+                <h3>Address</h3>
+                <!--The div element for the map -->
+                <div id="map" style="width:100%;height:400px;"></div>
+          
 
                 </div>
                 </div>
@@ -487,6 +587,39 @@
                     <div class = "footer_div_placeInfo"></div>
                 </div>
             </div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -25.344, lng: 131.036};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+    </script>
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaneOwKGB1tgmf5A_G_dSr2GaSw4kHSj8&callback=initMap">
+</script>
+      
+    <script type="text/javascript">
+        $(".gallary_div_option").click(function(){
+            $(".gallary_div_option").removeClass("active");
+            $(this).addClass("active");
+            
+        });
+
+        //轮播
+        jQuery(".displayBox").slide({
+            mainCell: ".displayBox_bd ul",
+            effect: "leftLoop",
+            vis: "auto",
+            autoPlay: true,
+            trigger: "mouseover"
+        });
+    </script>
+              
     <!-- </div> -->
     </body>
 </html>
