@@ -599,9 +599,7 @@
         var marker = new google.maps.Marker({position: uluru, map: map});
         }
     </script>
-<script defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaneOwKGB1tgmf5A_G_dSr2GaSw4kHSj8&callback=initMap">
-</script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaneOwKGB1tgmf5A_G_dSr2GaSw4kHSj8&callback=initMap"></script>
       
     <script type="text/javascript">
         $(".gallary_div_option").click(function(){
