@@ -1,14 +1,14 @@
 @section('css')
-<link href="{{asset('resources/theme/metronic/assets/vendors/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css"/>
 <style>
 .transparent-background {
     background: transparent
 }
 </style>
+<link rel="styleSheet" href="{{URL::asset('/theme/metronic/assets/vendors/custom/datatables/datatables.bundle.css') }}" type="text/css">
 @endsection
 @section('script')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" type="text/javascript"></script>
-<script src="{{asset('resources/theme/metronic/assets/vendors/custom/datatables/datatables.bundle.js')}}" type="text/javascript"></script>
+<!-- <script src="{{asset('resources/theme/metronic/assets/vendors/custom/datatables/datatables.bundle.js')}}" type="text/javascript"></script> -->
 @endsection
 @section('body')
 <!-- BEGIN: Header -->
