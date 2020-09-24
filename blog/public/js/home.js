@@ -144,6 +144,30 @@ function footerPosition(){
         }
 }
 
-
- 
-
+//user login
+function userLogin(){
+    if ($('.login_div_un').val() == "" || $('.login_div_pass').val() == "") {
+        alert("username or password can't be space");
+    } else {
+        let userinfo = {};
+        userinfo.username = document.getElementById("login_username_id").Value;
+        userinfo.password = document.getElementById("login_password_id").Value;
+        $.ajax({
+            type: "GET",
+            url: "userLogin",
+            dataType:'json',
+            data: JSON.stringify(userinfo),
+            success: function (msg) {
+                if (msg.check == "success") {
+                    //parent.tb_remove();
+                    
+                }
+                if (msg.check == "fail") {
+                    alert("username or password is wrong");
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, thrownError) {
+            }
+        });
+    }
+}

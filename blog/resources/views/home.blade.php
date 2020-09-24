@@ -521,9 +521,9 @@
                 <div class="login_div_main">
                     <p class="login_div_sign" align="center">Log in</p>
                     <form class="login_div_form1">
-                    <input class="login_div_un " type="text" align="center" placeholder="Username">
-                    <input class="login_div_pass" type="password" align="center" placeholder="Password">
-                    <a class="login_div_submit" align="center">Log in</a>
+                    <input id="login_username_id" class="login_div_un " type="text" align="center" placeholder="Username">
+                    <input id="login_password_id"class="login_div_pass" type="password" align="center" placeholder="Password">
+                    <a class="login_div_submit" align="center" onclick="userLogin()">Log in</a>
                     <p class="login_div_forgot" align="center"><a href="#">Forgot Password?</a></p>           
                 </div>
             </div>

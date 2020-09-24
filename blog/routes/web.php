@@ -16,17 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-// Route::get('/', function () {
-//     return view('dashboard');
-// });
 
+Route::get('/userLogin', function () {
+    return view('dashboard');
+});
 
 $api = app(\Dingo\Api\Routing\Router::class);
 
 $api->version('v1', function ($api) {
 
-    $api->get('/test', function () {
-        return view('');
+    //$api->get('/userLogin', 'UserController@userLogin');
+    $api->post('userLogin', function(){
+        return view("dashboard");
     });
-
+    
 });
