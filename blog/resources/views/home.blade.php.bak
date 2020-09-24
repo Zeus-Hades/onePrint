@@ -27,30 +27,15 @@
                 </div>
                 <div class="product" id="product_id" onclick="clickHeader(1)">
                     <p>product</p>
-                    <ul id="product_ul">
-                        <li>product1</li>
-                        <li>product2</li>
-                        <li>product3</li>
-                        <li>product4</li>
-                    </ul>
+                    
                 </div>
                 <div class="design" id="design_id" onclick="clickHeader(2)">
                     <p>design</p>
-                    <ul id="design_ul">
-                        <li>design1</li>
-                        <li>design2</li>
-                        <li>design3</li>
-                        <li>design4</li>
-                        <li>design3</li>
-                    </ul>
+                    
                 </div>
                 <div class="gallary" id="gallary_id" onclick="clickHeader(3)">  
                     <p>gallary</p>
-                    <ul id="gallary_ul">
-                        <li>gallary1</li>
-                        <li>gallary2</li>
-                        <li>gallary3</li>
-                    </ul>
+                    
                 </div>
                 <div class="support" id="support_id" onclick="clickHeader(4)"><p>support</p></div>
                 <div class="aboutUs" id="aboutUs_id" onclick="clickHeader(5)"><p>about us</p></div>
@@ -59,7 +44,7 @@
                 <div class="login" id="login_id" onclick="clickHeader(8)"><p>login</p></div>
                 <div class="register" id="register_id" onclick="clickHeader(9)"><p>register</p></div>
             </div>
-
+            
             <!-- diaplayBox -->
             <div class = "displayBox" id="displayBox_id" onload="change()">
                 <div class="displayBox_bd">
@@ -635,20 +620,8 @@
             autoPlay: true,
             trigger: "mouseover"
         });
-
-        $(document).ready(function() {
-            $( '.dropdown' ).hover(
-                function(){
-                    $(this).children('.sub-menu').slideDown(200);
-                },
-                function(){
-                    $(this).children('.sub-menu').slideUp(200);
-                }
-            );
-        }); // end ready
     </script>
-    
-
+              
     <!-- </div> -->
     </body>
 </html>
