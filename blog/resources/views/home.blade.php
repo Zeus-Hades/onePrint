@@ -12,7 +12,8 @@
     <script type="text/javascript" src="{{URL::asset('/js/jquery-3.5.1.js') }}"></script>
     <script type="text/javascript" src="{{URL::asset('/js/jquery-3.5.1.min.js') }}"></script>
     <script src="https://static.pdflibr.com/SuperSlide/2.1.3/jquery.SuperSlide.2.1.3.js"></script>
-    </script>
+    <script type="text/javascript" src="{{URL::asset('/js/vue.js') }}"></script>
+    <script type="text/javascript" src="{{URL::asset('/js/vue-router.js') }}"></script>
     </head>
     <body onload="initPage()">
     <!-- <div id="container"> -->
@@ -26,31 +27,19 @@
                 </div>
                 <div class="product" id="product_id" onclick="clickHeader(1)">
                     <p>product</p>
-                    <ul id="product_ul">
-                        <li><p>booklets</p></li>
-                        <li><p>product_2</p></li>
-                        <li><p>product_3</p></li>
-                    </ul>
+                    
                 </div>
                 <div class="design" id="design_id" onclick="clickHeader(2)">
                     <p>design</p>
-                    <ul id="design_ul">
-                        <li><p>booklets</p></li>
-                        <li><p>product_2</p></li>
-                        <li><p>product_3</p></li>
-                    </ul>
+                    
                 </div>
                 <div class="gallary" id="gallary_id" onclick="clickHeader(3)">  
                     <p>gallary</p>
-                    <ul id="gallary_ul">
-                        <li><p>booklets</p></li>
-                        <li><p>product_2</p></li>
-                        <li><p>product_3</p></li>
-                    </ul>
+                    
                 </div>
                 <div class="support" id="support_id" onclick="clickHeader(4)"><p>support</p></div>
                 <div class="aboutUs" id="aboutUs_id" onclick="clickHeader(5)"><p>about us</p></div>
-                <div class="contact" id="contact_id" onclick="clickHeader(6)"><p>contact us</p></div>
+                <div class="contact" id="contact_id" onclick="clickHeader(6)"><p>contact</p></div>
                 <div class="cart" id="cart_id" onclick="clickHeader(7)"><p>cart</p></div>
                 <div class="login" id="login_id" onclick="clickHeader(8)"><p>login</p></div>
                 <div class="register" id="register_id" onclick="clickHeader(9)"><p>register</p></div>
@@ -58,18 +47,11 @@
             
             <!-- diaplayBox -->
             <div class = "displayBox" id="displayBox_id" onload="change()">
-                <div class="displayBox_hd">
-                    <ul>
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                    </ul>
-                </div>
                 <div class="displayBox_bd">
                     <ul>
-                        <img src="{{URL::asset('/image/1.jpg') }}" max-width="80%" max-height="400px">
-                        <img src="{{URL::asset('/image/2.jpg') }}" max-width="80%" max-height="400px">
-                        <img src="{{URL::asset('/image/3.jpg') }}" max-width="80%" max-height="400px">
+                        <img src="{{URL::asset('/image/1.jpg') }}" width=80% height=400px>
+                        <img src="{{URL::asset('/image/2.jpg') }}" width=80% height=400px>
+                        <img src="{{URL::asset('/image/3.jpg') }}" width=80% height=400px>
                     </ul>
                 </div>
             </div>
@@ -173,9 +155,8 @@
                             <div class="gallary_div_icon">
                                 <i class="gallary_div_fas fa-walking"></i>
                             </div>
-                            <div class="gallary_div_info">
-                                <div class="gallary_div_main">Blonkisoaz</div>
-                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            <div class="gallary_div_info"> 
+                                <span class="gallary_div_article">添加文字...添加文字...添加文字...</span>                               
                             </div>
                         </div>
                     </div>
@@ -186,8 +167,7 @@
                                 <i class="gallary_div_fas fa-snowflake"></i>
                             </div>
                             <div class="gallary_div_info">
-                                <div class="gallary_div_main">Oretemauw</div>
-                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                                <span class="gallary_div_article">添加文字...添加文字...添加文字...</span>
                             </div>
                         </div>
                     </div>
@@ -198,8 +178,7 @@
                                 <i class="gallary_div_fas fa-snowflake"></i>
                             </div>
                             <div class="gallary_div_info">
-                                <div class="gallary_div_main">Oretemauw</div>
-                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                                <span class="gallary_div_article">添加文字...添加文字...添加文字...</span>
                             </div>
                         </div>
                     </div>
@@ -210,8 +189,7 @@
                                 <i class="gallary_div_fas fa-snowflake"></i>
                             </div>
                             <div class="gallary_div_info">
-                                <div class="gallary_div_main">Oretemauw</div>
-                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                                <span class="gallary_div_article">添加文字...添加文字...添加文字...</span>
                             </div>
                         </div>
                     </div>
@@ -222,8 +200,7 @@
                                 <i class="gallary_div_fas fa-snowflake"></i>
                             </div>
                             <div class="gallary_div_info">
-                                <div class="gallary_div_main">Oretemauw</div>
-                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                                <span class="gallary_div_article">添加文字...添加文字...添加文字...</span>
                             </div>
                         </div>
                     </div>
@@ -234,8 +211,7 @@
                                 <i class="gallary_div_fas fa-tint"></i>
                             </div>
                             <div class="gallary_div_info">
-                                <div class="gallary_div_main">Idiefe</div>
-                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                                <span class="gallary_div_article">添加文字...添加文字...添加文字...</span>
                             </div>
                         </div>
                     </div>
@@ -246,9 +222,8 @@
                             <div class="gallary_div_icon">
                                 <i class="gallary_div_fas fa-sun"></i>
                             </div>
-                            <div class="gallary_div_info">
-                                <div class="gallary_div_main">Inatethi</div>
-                                <div class="gallary_div_sub">Omuke trughte a otufta</div>
+                            <div class="gallary_div_info">                               
+                                <span class="gallary_div_article">添加文字...添加文字...添加文字...</span>
                             </div>
                         </div>
                     </div>
@@ -488,18 +463,18 @@
                     <div id="feedback">
                     <!-- Heading Of The Form -->
                     <div class="head">
-                    <h3>FeedBack Form</h3>
+                    <h3 class="contact_title" align="center">FeedBack Form</h3>
                     <p>This is feedback form. Send us your feedback !</p>
                     </div>
                     <!-- Feedback Form -->
                     <form action="#" id="form" method="post" name="form">
-                    <input name="contact_div_vname" placeholder="Your Name" type="text" value="">
-                    <input name="contact_div_vemail" placeholder="Your Email" type="text" value="">
-                    <input name="contact_div_sub" placeholder="Subject" type="text" value="">
+                    <input class="contact_div_vname" id="contact_div_vname"placeholder="Your Name" type="text" align="center">
+                    <input class="contact_div_vemail" id="contact_div_vemail"placeholder="Your Email" type="text" align="center">
+                    <input class="contact_div_sub" id="contact_div_sub"placeholder="Subject" type="text" align="center">
                     <p>Your Suggestion/Feedback</p>
-                    <textarea name="contact_div_msg" placeholder="Type your text here..."></textarea>
+                    <textarea class="contact_div_msg" id="contact_div_msg" placeholder="Type your text here..."></textarea>
                     <p></p>
-                    <input id="contact_div_send" name="submit" type="submit" value="Send Feedback">
+                    <input class="contact_div_send" id="contact_div_send" name="submit" type="submit" value="Send Feedback">
                     </form>
                     <h3><?php include "../resources/views/secure_email_code.php"?></h3>
                     </div>
@@ -516,11 +491,15 @@
                 </div>
                 </div>
             </div>
-
+            
             <!-- cart -->
-            <div class = "cart_div" id="cart_div_id" style="display:none">
+            {{-- <div class = "cart_div" id="cart_div_id" style="display:none">
 
-            </div>
+            </div> --}}
+
+            
+
+
 
             <!-- login -->
             <div class = "login_div" id="login_div_id" style="display:none">
@@ -530,17 +509,18 @@
                     <input class="login_div_un " type="text" align="center" placeholder="Username">
                     <input class="login_div_pass" type="password" align="center" placeholder="Password">
                     <a class="login_div_submit" align="center">Log in</a>
-                    <p class="login_div_forgot" align="center"><a href="#">Forgot Password?</p>           
+                    <p class="login_div_forgot" align="center"><a href="#">Forgot Password?</a></p>           
                 </div>
             </div>
 
             <!-- register -->
             <div class = "register_div" id="register_div_id" style="display:none">
                 <div class="register_div_user">
-                    <header class="register_div_user_header">
+                    <!-- <header class="register_div_user_header">
                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3219/logo.svg" alt="" />
                         <h1 class="register_div_user_title">Register form</h1>
-                    </header>
+                    </header> -->
+                    <p class="login_div_sign" align="center">Register</p>
                     
                     <form class="register_div_form">
                         <div class="register_div_form_group">
@@ -580,13 +560,37 @@
                 </div>
             </div>
             
-            <!-- footer -->
-            <div class = "footer" id="footer_id">
-                <div class = "footer_div_message" id="footer_div_message_id">
-                    <div class = "footer_div_phoneNumber"></div>
-                    <div class = "footer_div_placeInfo"></div>
+             <!-- footer -->
+             <div class = "footer" id="footer_id">
+                <div class = "footer_div_phoneNumber">
+                    <img src="{{URL::asset('/image/tel.png') }}" width=80px height=80px>
+                    <p>130 000 0000</p>
+                </div>
+                <div class = "footer_div_placeInfo">
+                    <div>
+                        <h1>Printion Servers</h1>
+                        <p>Business Card Printing</p>
+                        <p>Envelope Printing</p>
+                        <p>Docker Book Printing</p>
+                        <p>Brochuer Printing</p>
+                    </div>
+                    <div>
+                        <p>Post Printing</p>
+                        <p>Postcard Printing</p>
+                        <p>Posters Printing</p>
+                        <p>Express Printing</p>
+                        <p>Website Printing</p>
+                    </div>
+                    <div>
+                        <h1>Company Info</h1>
+                        <p>About Us</p>
+                        <p>Contact</p>
+                        <p>Privity Policy</p>
+                        <p>Test</p>
+                    </div>
                 </div>
             </div>
+{{-- 
     <script>
         // Initialize and add the map
         function initMap() {
@@ -598,8 +602,8 @@
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: uluru, map: map});
         }
-    </script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaneOwKGB1tgmf5A_G_dSr2GaSw4kHSj8&callback=initMap"></script>
+    </script> --}}
+    {{-- <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaneOwKGB1tgmf5A_G_dSr2GaSw4kHSj8&callback=initMap"></script> --}}
       
     <script type="text/javascript">
         $(".gallary_div_option").click(function(){

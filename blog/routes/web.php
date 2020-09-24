@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// });
 Route::get('/', function () {
-    return view('dashboard');
+    return view('home');
 });
+// Route::get('/', function () {
+//     return view('dashboard');
+// });
 
 
 $api = app(\Dingo\Api\Routing\Router::class);

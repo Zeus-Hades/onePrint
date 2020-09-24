@@ -29,31 +29,30 @@ function initPage() {
     footerPosition();
     $(window).resize(footerPosition);
 
-    //二级菜单
-    $("#product_id").hover(function() {  
-            $("#product_ul").show(200);  
-        } ,
-        function() {
-            $("#product_ul").hide(200); 
-        }
-    ); 
+    // //二级菜单
+    // $("#product_id").hover(function() {  
+    //         $("#product_ul").show(200);  
+    //     } ,
+    //     function() {
+    //         $("#product_ul").hide(200); 
+    //     }
+    // ); 
     
-    $("#design_id").hover(function() {  
-        $("#design_ul").show(200);  
-    } ,
-        function() {
-            $("#design_ul").hide(200); 
-        }
-    ); 
+    // $("#design_id").hover(function() {  
+    //     $("#design_ul").show(200);  
+    // } ,
+    //     function() {
+    //         $("#design_ul").hide(200); 
+    //     }
+    // ); 
 
-    $("#gallary_id").hover(function() {  
-        $("#gallary_ul").show(200);  
-    } ,
-        function() {
-            $("#gallary_ul").hide(200); 
-        }
-    ); 
-
+    // $("#gallary_id").hover(function() {  
+    //     $("#gallary_ul").show(200);  
+    // } ,
+    //     function() {
+    //         $("#gallary_ul").hide(200); 
+    //     }
+    // ); 
 
 }
 
@@ -156,6 +155,7 @@ function reset() {
     document.getElementById("contact_div_id").style.display = "none";
     document.getElementById("login_div_id").style.display = "none";
     document.getElementById("register_div_id").style.display = "none";
+    
 }
 
 
